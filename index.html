@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Dragon's Nest</title>
+	<link rel="stylesheet" href="css/styles.css" />
+	<!-- <link rel="stylesheet" href="css/output.css"> -->
+</head>
+
+<body>
+	<div id="header">
+		<div class="container">
+			<nav>
+				<img src="./asssets/images/logo.png" alt="logo" class="logo" />
+				<ul id="sidebar">
+					<li><a href="#header">Home</a></li>
+					<li><a href="#about">About Us</a></li>
+					<li><a href="#services">Services</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#contact">Contact Us</a></li>
+					<i class="fa-solid fa-xmark" onclick="closeSidebar()"></i>
+				</ul>
+				<!-- <i class="fa-solid fa-ellipsis-vertical"></i> -->
+				<i class="fa-solid fa-bars" onclick="openSidebar()"></i>
+			</nav>
+			<div class="header-text">
+				<p>Developer</p>
+				<h1>Hi, I'm <span>Souvik</span> Karmakar</h1>
+			</div>
+		</div>
+	</div>
+
+	<!-- About -->
+	<div id="about">
+		<div class="container">
+			<div class="row">
+				<div class="about-col-1">
+					<img src="./asssets/images/user.jpg" alt="profile" />
+				</div>
+				<div class="about-col-2">
+					<h1 class="sub-title">About Me</h1>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quae
+						qui saepe cupiditate sunt officia voluptas tempora tenetur.
+						Expedita, et perferendis? Fugit dolorem ab quae iure hic
+						recusandae assumenda consequuntur sapiente tenetur veniam delectus
+						deserunt et ea nihil sit neque placeat, veritatis temporibus
+						consequatur doloremque, vero maxime explicabo exercitationem.
+						Recusandae reiciendis necessitatibus voluptates consectetur esse
+						illo et molestiae eveniet dicta, tempora commodi dolorum cum dolor
+						provident maiores rerum impedit unde illum.
+					</p>
+					<a href="./asssets/Souvik.pdf" download="Souvik.pdf" class="btn">Download CV</a>
+					<div class="tab-titles">
+						<p class="tab-links active-link" onclick="openTab(event,'skills')">
+							Skills
+						</p>
+						<p class="tab-links" onclick="openTab(event,'experience')">
+							Experience
+						</p>
+						<p class="tab-links" onclick="openTab(event,'education')">
+							Education
+						</p>
+					</div>
+					<div class="tab-contents active-tab" id="skills">
+						<ul>
+							<li><span>UI/UX</span><br />Designing Web/App interfaces</li>
+							<li>
+								<span>Web Development</span>
+								<br />Modern website developement using HTML, CSS, JS
+								<br />Full Stack Development using MERN Stack <br />Tailwind
+								CSS, Bootstrap, Material UI
+							</li>
+							<li>
+								<span>App Development</span>
+								<br />Windows App Development using python, .NET, electron.js
+								<br />Android App Development using Java, React Native,
+								Flutter
+							</li>
+						</ul>
+					</div>
+					<div class="tab-contents" id="experience">
+						<ul>
+							<li>
+								<span>2019-2020</span>
+								<br />Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Ex quae qui saepe cupiditate sunt officia voluptas tempora
+								tenetur.
+							</li>
+							<li>
+								<span>2019-2020</span>
+								<br />Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Ex quae qui saepe cupiditate sunt officia voluptas tempora
+								tenetur.
+							</li>
+							<li>
+								<span>2019-2020</span>
+								<br />Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Ex quae qui saepe cupiditate sunt officia voluptas tempora
+								tenetur.
+							</li>
+						</ul>
+					</div>
+					<div class="tab-contents" id="education">
+						<ul>
+							<li>
+								<span>2019-2020</span>
+								<br />Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Ex quae qui saepe cupiditate sunt officia voluptas tempora
+								tenetur.
+							</li>
+							<li>
+								<span>2019-2020</span>
+								<br />Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Ex quae qui saepe cupiditate sunt officia voluptas tempora
+								tenetur.
+							</li>
+							<li>
+								<span>2019-2020</span>
+								<br />Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Ex quae qui saepe cupiditate sunt officia voluptas tempora
+								tenetur.
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Services -->
+	<div id="services">
+		<div class="container">
+			<h1 class="sub-title">Services</h1>
+			<div class="services-list">
+				<div class="services-item">
+					<!-- <img src="./asssets/images/web.png" alt="web" /> -->
+					<i class="fas fa-laptop-code"></i>
+					<h2>Web Development</h2>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quae
+						qui saepe cupiditate sunt officia voluptas tempora tenetur.
+					</p>
+				</div>
+				<div class="services-item">
+					<!-- <img src="./asssets/images/app.png" alt="app" /> -->
+					<i class="fas fa-mobile-alt"></i>
+					<h2>Android Development</h2>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quae
+						qui saepe cupiditate sunt officia voluptas tempora tenetur.
+					</p>
+				</div>
+				<div class="services-item">
+					<!-- <img src="./asssets/images/app.png" alt="app" /> -->
+					<i class="fas fa-desktop"></i>
+					<h2>Windows Development</h2>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quae
+						qui saepe cupiditate sunt officia voluptas tempora tenetur.
+					</p>
+				</div>
+				<div class="services-item">
+					<!-- <img src="./asssets/images/seo.png" alt="seo" /> -->
+					<i class="fas fa-search"></i>
+					<h2>SEO</h2>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quae
+						qui saepe cupiditate sunt officia voluptas tempora tenetur.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Portfolio -->
+	<div id="portfolio">
+		<div class="container">
+			<h1 class="sub-title">My Works</h1>
+			<div class="portfolio-list">
+				<div class="portfolio-item">
+					<img src="asssets/images/my-works/MangaHub.png" alt="MangaHub Website" />
+					<h2>MangaHub/h2>
+						<div class="portfolio-info">
+							<div class="link-group">
+								<a href="#" class=""> <i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+								<a href="#" class=""> <i class="fa-brands fa-github"></i> </a>
+							</div>
+							<h3>MangaHub</h3>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+								quae qui saepe cupiditate sunt officia voluptas tempora
+								tenetur.
+							</p>
+						</div>
+				</div>
+				<div class="portfolio-item">
+					<img src="asssets/images/my-works/AirCursor.png" alt="Air Cursor App" />
+					<h2>AirCursor</h2>
+					<div class="portfolio-info">
+						<div class="link-group">
+							<a href="#" class=""> <i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+							<a href="#" class=""> <i class="fa-brands fa-github"></i> </a>
+						</div>
+						<h3>AirCursor</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+							quae qui saepe cupiditate sunt officia voluptas tempora
+							tenetur.
+						</p>
+					</div>
+				</div>
+				<div class="portfolio-item">
+					<img src="./asssets/images/my-works/Blogs.png" alt="Blog Website" />
+					<h2>Blogs</h2>
+					<div class="portfolio-info">
+						<div class="link-group">
+							<a href="#" class=""> <i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+							<a href="#" class=""> <i class="fa-brands fa-github"></i> </a>
+						</div>
+						<h3>Blogs</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+							quae qui saepe cupiditate sunt officia voluptas tempora
+							tenetur.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Contact -->
+	<div id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="contact-left">
+					<h1 class="sub-title">Contact Me</h1>
+					<p><i class="fa-regular fa-envelope"></i> <span>souvikk431@gmail.com</span> </p>
+					<p><i class="fa-solid fa-phone"></i> <span>9842924659</span> </p>
+					<p><i class="fa-solid fa-location-dot"></i> <span>West Bengal, India</span> </p>
+					<div class="social-links">
+						<a href="https://www.facebook.com/profile.php?id=100087788994811" target="_blank">
+							<i class="fa-brands fa-facebook"></i>
+						</a>
+						<a href="https://www.instagram.com/souv1k_13/" target="_blank">
+							<i class="fa-brands fa-instagram"></i>
+						</a>
+						<a href="https://www.linkedin.com/in/souvik-karmakar-888202257/" target="_blank">
+							<i class="fa-brands fa-linkedin"></i>
+						</a>
+						<a href="https://github.com/souvik-13" target="_blank">
+							<i class="fa-brands fa-github"></i>
+						</a>
+					</div>
+					<a href="./asssets/Souvik.pdf" download="Souvik.pdf" class="btn btn2">Download CV</a>
+				</div>
+				<div class="contact-right">
+					<form action="#" id="contact-form">
+						<input type="text" placeholder="Name" name="userName" id="name" required />
+						<input type="email" placeholder="Email" name="userEmail" id="email" required/>
+						<textarea type="text" name="userMessage" placeholder="Message" id="message" rows="6" required></textarea>
+						<button type="submit" class="btn btn2"><i class="fa-solid fa-paper-plane"></i> <span>Send</span></button>
+					</form>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<div id="footer">
+		<p>Made with <i class="fa-solid fa-heart"></i>by Souvik Karmakar | &copy; 2021 All rights reserved.</p>
+	</div>
+
+</body>
+<script src="js/main.js"></script>
+<script src="https://kit.fontawesome.com/f5f45c97ac.js" crossorigin="anonymous"></script>
+
+</html>
