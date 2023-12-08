@@ -24,48 +24,28 @@ function closeSidebar() {
 
 // mail form
 let form = document.querySelector('#contact-form');
-let name = document.querySelector('#name');
+let userName = document.querySelector('#name');
 let email = document.querySelector('#email');
 let message = document.querySelector('#message');
 let submit = document.querySelector('#submit');
 
-// form.addEventListener('submit', function (e) {
-//     e.preventDefault();
-//     // console.log(e, e.target, e.currentTarget);
-//     let formData = {
-//         name: name.value,
-//         email: email.value,
-//         message: message.value
-//     };
-//     console.log(formData);
+form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    // console.log(e, e.target, e.currentTarget);
+    let formData = {
+        name: userName.value,
+        email: email.value,
+        message: message.value
+    };
 
-//     // let xhr = new XMLHttpRequest();
-//     // xhr.open('POST', '/');
-//     // xhr.setRequestHeader('content-type', 'application/json');
-//     // xhr.onload = function () {
-//     //     console.log(xhr.responseText);
-//     //     if (xhr.responseText == 'success') {
-//     //         alert('Email sent');
-//     //         name.value = '';
-//     //         email.value = '';
-//     //         message.value = '';
-//     //     } else {
-//     //         alert('Something went wrong');
-//     //     }
-//     // };
+    let link = 'mailto:souvikk431@gmail.com?subject=Message from ' + formData.name + '&body=' + formData.message + ' from ' + formData.email;
 
-//     // xhr.send(JSON.stringify(formData));
+    submit.setAttribute('href', link);
+    submit.click();
 
-// });
-
-// function sendEmail(event) {
-//     event.preventDefault();
-//     let formData = {
-//         name: name.value,
-//         email: email.value,
-//         message: message.value
-//     };
-//     let link = "mailto:?subject=" + encodeURIComponent(formData.name) + "&body=" + encodeURIComponent(formData.message);
-//     let mailbutton = document.createElement('a', { href: link });
-//     mailbutton.click();
-// }
+    setTimeout(function () {
+        userName.value = '';
+        email.value = '';
+        message.value = '';
+    }, 3000);
+});

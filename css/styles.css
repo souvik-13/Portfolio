@@ -59,7 +59,14 @@ a {
 .container {
   padding: 10px 10%;
 }
-
+.logo {
+  color: #fff;
+  font-size: 50px;
+  font-weight: 700;
+}
+.logo span {
+  color: #ff004f;
+}
 nav {
   display: flex;
   justify-content: space-between;
@@ -70,7 +77,7 @@ nav {
 nav ul li {
   display: inline-block;
   list-style: none;
-  margin: 10px 20px;
+  margin: 10px 1vw;
 }
 nav ul li a {
   text-decoration: none;
@@ -167,6 +174,18 @@ nav ul li a:hover::after {
 .tab-contents {
   display: none;
   margin-bottom: 30px;
+}
+
+.tab-contents ul li {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.tab-contents ul li span {
+  font-size: 16px;
+  font-weight: 400;
+  color: #ff004f;
 }
 .active-tab {
   display: block;
@@ -270,6 +289,11 @@ nav ul li a:hover::after {
 .portfolio-item:hover .portfolio-info .link-group i {
   transform: scale(1.2);
 }
+.portfolio-item:hover .portfolio-info .link-group i:hover {
+  transform: scale(1.2);
+  /* glow */
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff004f, 0 0 40px #ff004f, 0 0 50px #ff004f, 0 0 60px #ff004f, 0 0 70px #ff004f;
+}
 
 .portfolio-item .portfolio-info h3 {
   font-size: 30px;
@@ -286,7 +310,7 @@ nav ul li a:hover::after {
 }
 
 .portfolio-item .portfolio-info p {
-  font-size: 16px;
+  font-size: 12px;
   opacity: 1;
   transform: translateX(0);
   padding: 10px;
@@ -403,12 +427,17 @@ nav .fa-solid {
   display: none;
 }
 
-@media only screen and (max-width: 600px) {
+
+/* Extra Small Devices (phones) */
+@media only screen and (max-width: 576px) {
     #header {
         background-image: url(../asssets/images/AE1_phone.jpg);
     }
+    .logo {
+        font-size: 30px;
+    }
     .header-text {
-        margin-top: 100%;
+        margin-top: 90%;
         font-size: 16px;
     }
     .header-text h1 {
@@ -480,4 +509,25 @@ nav .fa-solid {
     .social-links a {
         font-size: 20px;
     }
+}
+
+/* Small Devices (landscape phones and small tablets) */
+@media (min-width: 576px) and (max-width: 768px) {
+  /* Styles for landscape phones and small tablets */
+
+}
+
+/* Medium Devices (tablets and small desktops) */
+@media (min-width: 768px) and (max-width: 992px) {
+  /* Styles for tablets and small desktops */
+}
+
+/* Large Devices (desktops and laptops) */
+@media (min-width: 992px) and (max-width: 1200px) {
+  /* Styles for desktops and laptops */
+}
+
+/* Extra Large Devices (large desktops) */
+@media (min-width: 1200px) {
+  /* Styles for large desktops */
 }
